@@ -1,0 +1,14 @@
+
+<html >
+ <head>
+ <script language="JavaScript" src="Validation.js">
+ </script>
+ </head>
+ <form action="voterurl" onsubmit="return validate(this)">
+ Persion name:<input type="text" name="pname"/><span id="nameErr"></span><br>
+ Persion age:<input type="text" name="page"/><span id="ageErr"></span><br>
+ <!--hidden box-->
+ <input type="hidden" value="no" name="vflag"/><br>
+ <input type="submit" value="check Voting Eligibilty">
+  </form>
+</html>
