@@ -1,0 +1,19 @@
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>servlet</servlet-name>
+    <servlet-class>com.nt.servlet.Welcome</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>check</servlet-name>
+    <servlet-class>com.nt.servlet.Validate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+</web-app>
